@@ -778,18 +778,25 @@ a {
     border-radius: 21px;
     position: absolute;
     bottom: 20px;
-    left: 20px;
+    left: 45%;
+    transform: translateX(-50%);
     font-size: 20px;
-    color: rgb(242 244 206);
+    color: rgb(0, 0, 0);
     /* background: url(./images/register.png) center center / contain no-repeat; */
     transform: scaleY(1.3);
     height: 42.3px;
     text-align: center;
     width: 181px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background: -webkit-linear-gradient(right, #a6f77b, #2dbd6e);
-    box-shadow: 0px 1px 8px #24c64f;
+    /* background: -webkit-linear-gradient(right, #a6f77b, #2dbd6e);
+    box-shadow: 0px 1px 8px #24c64f; */
     transition: 0.25s;
+    background:  linear-gradient(to left, rgba(0,0,0,0), rgba(255, 221, 0, 0.4) );
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(7.3px);
+-webkit-backdrop-filter: blur(7.3px);
+border: 1px solid rgb(255, 255, 255);
 
 }
 @media screen and (max-width:700px) {
@@ -797,16 +804,17 @@ a {
         width: 150px;
     font-size: 18px;
     height: 48px;
-    transform: translateX(-13px) scaleY(1.2);
+    transform: translateX(-50%) scaleY(1.2);
     padding: 10px 10px 10px 15px;
     }
     
 }
 .register-now:hover{
-    box-shadow: 0px 1px 18px #018524;
+    box-shadow: 0px 1px 18px #f6ff00;
     text-decoration: none;
-    color: rgb(255, 255, 255);
-    background: linear-gradient(to bottom right, #aebaf8,#9600FF);
+    color: rgb(0, 0, 0);
+    background: linear-gradient(to bottom , #ffffff,rgb(255, 221, 0));
+    background-color: white;
     transition: .1s ease;
 }
 .button {

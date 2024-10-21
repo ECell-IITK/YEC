@@ -23,6 +23,8 @@
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="carousel.css">
+
     <link rel="stylesheet" href="nav.css">
     <link rel="stylesheet" href="magnifier.css">
     <link rel="stylesheet" href="animation.css">
@@ -177,6 +179,35 @@
             </div>
         </div>
     </div>
+<!-- Carousal -->
+    <div id="container">
+        <div>
+            <h1 id="carousal">School Partner</h1>
+            <div style="max-width: 600px;background-color:#ffe32b;height: 6px;margin:auto;"></div>
+        </div>
+		<div id="slider-container">
+			<span onclick="slideRight()" class="btn"><i class="arrow"></i></span>
+			<div id="slider">
+				<div class="slide"> <div class="carousel_img-container">
+					<img src="./images/schools/iMAGE1.jpeg" alt="Avatar" style="width:100%">
+				</div> 
+					<div class="container">
+					<h5>SETH ANANDRAM JAIPURIA SCHOOL</h5>
+					
+					</div></div>
+				<div class="slide"><span></span></div>
+				<div class="slide"><span></span></div>
+				<div class="slide"><span></span></div>
+				<div class="slide"><span></span></div>
+				<div class="slide"><span></span></div>
+				<div class="slide"><span></span></div>
+				<div class="slide"><span></span></div>
+				<div class="slide"><span></span></div>
+			</div>
+			<span onclick="slideLeft()" class="btn"><i class="arrow"></i></span>
+		</div>
+	</div>
+
 
     <div class="termsNConditions">
         <div>
@@ -421,7 +452,7 @@
             </div>
         </div>
     </div>
-    
+    <script src="carousel.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>

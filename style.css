@@ -392,6 +392,103 @@ body {
 School Partners
 ==========
  */
+ .partners{
+    height: 100%;
+    background-color: white;
+
+}
+
+
+.partners {
+    height: 100%;
+    background-color: white;
+
+}
+
+.partners h1 {
+    text-align: center;
+    font-weight: 700px;
+    color: black;
+    
+}
+
+.partners h1:nth-child(1) {
+    font-size: 64px;
+}
+
+.partners h1:nth-child(2) {
+    font-size: 30px;
+}
+
+.partners h1:nth-child(3) {
+    font-size: 30px;
+}
+
+.partners-boxes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: start;
+    width: 100%;
+    height: 100%;
+    padding: 0 100px;
+    font-family: 'Inknut Antiqua', serif;
+}
+
+.partners-box {
+    width: 279px;
+    height: 237px;
+    background: yellow;
+    border-radius: 13px;
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.2s ease-in-out;
+    align-items: center;
+    justify-content: center;
+}
+.partners-box:hover {
+    transform:translateY(-10px);
+    opacity:0.9;
+}
+
+@media screen and (max-width:630px) {
+    .partners-boxes {
+        padding: 0 10px;
+    }
+
+    .partners-box {
+        margin: 20px;
+        font-size: 15px;
+    }
+
+    .partners h1:nth-child(1) {
+        font-size: 40px;
+    }
+
+    .partners h1:nth-child(2) {
+        font-size: 25px;
+    }
+}
+
+
+.partners-box img {
+    width: 70%;
+    
+}
+
+.partners-box div {
+    color: black;
+    padding: 15px;
+    text-align: center;
+    
+}
+/* 
+==========
+Terms and condition
+==========
+ */
 
 .termsNConditions {
     color: black;

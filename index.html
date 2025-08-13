@@ -26,7 +26,7 @@
 </head>
 
 <body>
-    <div id="popup" class="popup">
+    <!-- <div id="popup" class="popup">
         <div class="popup-content">
             <h2>Register for the Workshop !</h2>
             <p>Registrations open from July 23rd to August 15th, 2025.</p>
@@ -35,7 +35,7 @@
                 <button onclick="document.getElementById('popup').style.display='none'">Close</button>
              </div>
         </div>
-    </div>
+    </div> -->
     <header>
         <nav>
             <a class="navbar-brand" href="https://www.ecelliitk.org/" id="logo">
@@ -109,33 +109,55 @@
     </div>
 
 
-    <div class="container-3" id="about">
+    <div class="about-section" id="about">
+        <!-- Background Layers -->
+        <div class="bg-layer bg-gridL"></div>
+        <div class="bg-layer bg-gridR"></div>
+        <div class="bg-layer bg-buildings"></div>
 
-        <div class="about">
-            <div>
-                <h1>
-                    What is Youth Enterpreneurship <br> Challenge?
-                </h1>
-                <p>
-                    Youth Entrepreneurship Challenge offers an ideal platform for curious young minds to tackle everyday
-                    problems with ingenuity and originality. From imparting fundamental concepts of entrepreneurship to
-                    refining imaginative ideas, to crafting a business plan and presenting it to a panel of respected
-                    judges, this platform/challenge has it all!
-                </p>
+        <!-- Foreground Content -->
+        <div class="about-container">
+            <div class="about_info">
+                <div>
+                    <h1>What is Youth <br />Entrepreneurship Challenge?</h1>
+                    <p>
+                        Youth Entrepreneurship Challenge offers an ideal platform for curious young minds to tackle
+                        everyday
+                        problems with ingenuity and originality. From imparting fundamental concepts of entrepreneurship
+                        to
+                        refining imaginative ideas, to crafting a business plan and presenting it to a panel of
+                        respected
+                        judges, this platform/challenge has it all!
+                    </p>
+                </div>
             </div>
-            <div>
-                <h1>
-                    Vision
-                </h1>
-                <p>
-                    Youth Entrepreneurship Challenge aims to ignite the spark of innovation and problem-solving,
-                    encouraging young individuals to think outside the box and come up with novel solutions. Through
-                    this platform/challenge, participants will learn to turn their passion into profitable ventures and
-                    develop essential skills that will serve them well in their personal and professional lives.
-                </p>
+
+            <!-- Rocket PNG (Right Side) -->
+            <div class="about-rocket">
+                <img src="images/YEC_Lp_banner.png" alt="Rocket Illustration" />
             </div>
         </div>
     </div>
+
+    <div class="vision" id="about">
+        <div class="vision-image">
+            <img src="images/YEC_Vs_banner.png" alt="Vision Illustration" />
+        </div>
+        <div class="vision_info">
+            <div>
+                <h1 class="heading">Our Vision</h1>
+                <p>Youth Entrepreneurship Challenge aims to ignite the spark of innovation and problem-solving,
+                    encouraging
+                    young individuals to think outside the box and come up with novel solutions. Through this
+                    platform/challenge, participants will learn to turn their passion into profitable ventures and
+                    develop
+                    essential skills that will serve them well in their personal and professional lives
+                </p>
+
+            </div>
+        </div>
+    </div>
+
     <div class="timeline-1" id="timeline">
 
         <h1 class="heading">Timeline
@@ -146,46 +168,40 @@
         <img src="./images/timeline2.2.png" alt="" srcset="">
         <img src="./images/Timeline3_2024.png" alt="" srcset="">
         <img src="./images/timeline_end.png" alt="" srcset="" style="height:100px;width:180px;padding:0;margin:0 auto;">
-        <div class="incentives" id="incentives">
-            <h1 class="heading">Incentives</h1>
-            <div style="max-width: 350px;background-color:#ffe32b;height: 4px;margin:auto;"></div>
-            <!-- <h1>Register Now</h1> -->
-            <h1>OFFERINGS</h1>
-            <div class="incentives-boxes">
+
+    </div>
+
+    <div class="incentives" id="incentives">
+        <div class="incentives-container">
+            <!-- Left Side: Heading -->
+            <div class="incentives-left">
+                <h1>INCENTIVES</h1>
+                <div class="underline"></div>
+            </div>
+
+            <!-- Right Side: Boxes -->
+            <div class="incentives-right">
                 <div class="incentives-box">
-                    <div>
-                        <img src="./images/Scholarship.png" alt="Scholarship">
-                    </div>
-                    <div>Prizes worth 3 lakhs</div>
+                    <img src="./images/Scholarship.png" alt="Prize Icon" />
+                    <p>Prizes Worth 3 Lakhs</p>
                 </div>
                 <div class="incentives-box">
-                    <div>
-                        <img src="./images/certificate 1.png" alt="" srcset="">
-                    </div>
-                    <div>Mentorship from experienced industry experts</div>
+                    <img src="./images/certificate 1.png" alt="Prize Icon" />
+                    <p>Mentorship from experienced industry experts</p>
                 </div>
                 <div class="incentives-box">
-                    <div>
-                        <img src="./images/certificate 2.png" alt="" srcset="">
-                    </div>
-                    <div>Certificate from E-Cell IIT Kanpur</div>
+                    <img src="./images/certificate 2.png" alt="Prize Icon" />
+                    <p>Certificate from E-Cell IIT Kanpur</p>
                 </div>
                 <div class="incentives-box">
-                    <div>
-                        <img src="./images/certificate 3.png" alt="" srcset="">
-                    </div>
-                    <div>Free Passes to ESummit'24</div>
-                </div>
-                <div class="incentives-box">
-                    <div>
-                        <img src="./images/certificate 4.png" alt="" srcset="">
-                    </div>
-                    <div>Opportunity to meet and interact with the keynote speaker of ESummit’24
-                    </div>
+                    <img src="./images/certificate 3.png" alt="Prize Icon" />
+                    <p>Free Passes to ESummit'24</p>
                 </div>
             </div>
         </div>
     </div>
+
+
     <!-- School Partners -->
     <div class="partners" id="partners">
         <h1 class="heading">School Partners</h1>
@@ -247,6 +263,7 @@
         </div>
 
     </div>
+
     <div class="rules">
         <div>
             <h1 class="heading">Rules</h1>
@@ -272,9 +289,10 @@
             <img class="" src="./images/rules.png" alt="" srcset="">
         </div>
     </div>
+
     <!-- <div class="sponsor">
         <div>
-
+            
             <h1>Platform Partner</h1>
             <div style="width: 260px;background-color:#ffe32b;height: 6px;margin:auto;"></div>
         </div>
@@ -286,7 +304,7 @@
     <section class="judging" style="padding-top: 10px">
         <h1 class="heading">FAQ<span>s</span></h1>
         <div style="max-width: 200px;background-color:#ffe32b;height: 6px;margin:auto;"></div>
-        <div class="underline"></div>
+        <!-- <div class="underline"></div> -->
         <div class="judging-box">
             <img src="./images/faq.png" alt="" srcset="">
             <div class="accordion">
@@ -380,79 +398,95 @@
         </div>
 
     </section>
-    <div class="contact-us" id="contactUs">
-        <div>
-            <h1 class="contact-heading">Contact Us</h1>
-            <div class="team">
-                <div class="name">
-                    <h3>Aryan Mittal</h3>
-                    <p>Overall <br>Coordinator</p>
-                    <p><a href="tel:+91 85956 89515">+91 85956 89515</a></p>
-                    <p>
-                        <a href="mailto:aryan@ecelliitk.com">aryan@ecelliitk.com</a>
-                    </p>
-                </div>
-                <div class="name">
-                    <h3>Ishant Agrawal</h3>
-                    <p>Manager <br>Marketing<br></p>
-                    <p><a href="tel:+91 79764 18889">+91 79764 18889</a></p>
-                    <p>
-                        <a href="mailto:ishant@ecelliitk.com">ishant@ecelliitk.com</a>
-                    </p>
-                </div>
-            </div>
-            <div class="team">
-                <!-- <div class="name">
-                    <h3>Lakshit Sharma</h3>
-                    <p>Manager <br> Startup Development<br></p>
-                    <p><a href="tel:9717128417">9717128417</a></p>
-                    <p>
-                        <a href="mailto:lakshit@ecelliitk.com">lakshit@ecelliitk.com</a>
-                    </p>
-                </div> -->
-                <div class="name">
-                    <h3>Gaurav Tirpathi</h3>
-                    <p>Manager <br>Events<br></p>
-                    <p><a href="tel:+91 78809 24353">+91 78809 24353</a></p>
-                    <p>
-                        <a href="mailto:gaurav@ecelliitk.com">gaurav@ecelliitk.com</a>
-                    </p>
-                </div>
-            </div>
 
-        </div>
+    <div class="rules">
         <div>
-            <div class="follow-us">
-                <h1 class="contact-heading">Follow Us</h1>
-                <h4 style="color: #ffbe55">
-                    <a target="_blank " href="https://facebook.com/ecelliitk ">
-                        <img src="images/social_icons/facebook.png" alt="Facebook" style="transform: scale(0.96);" />
-                    </a>
-                    <a target="_blank " href="https://www.linkedin.com/company/entrepreneurship-cell-iit-kanpur/ ">
-                        <img src="images/social_icons/linkedin.png" alt="LinkedIn" />
-                    </a>
-                    <a target="_blank " href="https://www.instagram.com/ecelliitk/ ">
-                        <img src="images/social_icons/instagram.png" alt="Instagram" />
-                    </a>
-                    <a target="_blank " href="https://twitter.com/ecelliitk ">
-                        <img src="images/social_icons/twitter.png" alt="Twitter" />
-                    </a>
-                    <a target="_blank " href="https://www.youtube.com/channel/UCvxavCg0UhXq6oKkrBHc9zQ ">
-                        <img src="images/social_icons/youtube.png" alt="YouTube" />
-                    </a>
-                </h4>
-            </div>
-            <div class="issues">
-                <h1 class="contact-heading">For Issues & Queries</h1>
-                <div><a href="mailto:events@ecelliitk.com">events@ecelliitk.com</a> </div>
-                <div><a href="mailto:ecell@iitk.ac.in">ecell@iitk.ac.in</a> </div>
-            </div>
-            <div class="sponsorship">
-                <h1 class="contact-heading">For sponsorship opportunities</h1>
-                <div><a href="mailto:marketing.ecelliitk@gmail.com">marketing.ecelliitk@gmail.com</a> </div>
+            <h1 class="heading">Contact Us</h1>
+            <div style="max-width: 200px;background-color:#ffe32b;height: 6px;margin:auto;"></div>
+        </div>
+        <div class="container2">
+            <div class="row-contact">
+                <div class="col-md-4 text-center vaibhav">
+                    <div style="filter: drop-shadow(0px 0px 0px #eaebf0)">
+                        <img src="https://www.ecelliitk.org/images/profile/GauravTir (1).jpeg" width="250px"
+                            height="250px" />
+                        <h3>Gaurav Tirpathi</h3>
+                        <h5 style="font-weight: 20px">Head Events</h5>
+                        <h4>
+                            <a href="tel:+91 78809 24353"><i class="fa fa-phone" aria-hidden="true"></i></a>
+                            <a href="mailto:gaurav@ecelliitk.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                            <a target="_blank" href="https://www.linkedin.com/in/kalpakagrawal/ "><i
+                                    class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        </h4>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center vaibhav">
+                    <div style="filter: drop-shadow(0px 0px 0px #eaebf0)">
+                        <img src="https://www.ecelliitk.org/images/profile/Abhay_Saxena2 (1).jpg" width="250px"
+                            height="250px" />
+                        <h3>Abhay Saxena</h3>
+                        <h5 style="font-weight: 20px">Head Web Development</h5>
+                        <h4>
+                            <a href="tel:+91 9301568760"><i class="fa fa-phone" aria-hidden="true"></i></a>
+                            <a href="mailto:abhay@ecelliitk.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                            <a target="_blank" href="https://www.linkedin.com/in/abhay-saxena-3a5503293/"><i
+                                    class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        </h4>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center sanmati">
+                    <div style="filter: drop-shadow(0px 0px 0px #eaebf0)">
+                        <img src="https://www.ecelliitk.org/images/profile/IshantAgrawal (1).jpg" width="250px"
+                            height="250px" style="border-radius: 10px solid;" />
+                        <h3>Ishant Agrawal</h3>
+                        <h5 style="font-weight: 20px">Head Marketing</h5>
+                        <h4>
+                            <a href="tel:+91 79764 18889"><i class="fa fa-phone" aria-hidden="true"></i></a>
+                            <a href="mailto:ishant@ecelliitk.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                            <a target="_blank" href="https://www.linkedin.com/in/ishant-agrawal-b4aa422a7/"><i
+                                    class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        </h4>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+
+
+    <div class="contact-us" id="contactUs">
+        <div class="follow-us">
+            <h1 class="contact-heading">Follow Us</h1>
+            <div class="social-icons">
+                <a target="_blank" href="https://facebook.com/ecelliitk">
+                    <img src="images/social_icons/facebook.png" alt="Facebook" />
+                </a>
+                <a target="_blank" href="https://www.linkedin.com/company/entrepreneurship-cell-iit-kanpur/">
+                    <img src="images/social_icons/linkedin.png" alt="LinkedIn" />
+                </a>
+                <a target="_blank" href="https://www.instagram.com/ecelliitk/">
+                    <img src="images/social_icons/instagram.png" alt="Instagram" />
+                </a>
+                <a target="_blank" href="https://twitter.com/ecelliitk">
+                    <img src="images/social_icons/twitter.png" alt="Twitter" />
+                </a>
+                <a target="_blank" href="https://www.youtube.com/channel/UCvxavCg0UhXq6oKkrBHc9zQ">
+                    <img src="images/social_icons/youtube.png" alt="YouTube" />
+                </a>
+            </div>
+        </div>
+
+        <div class="issues">
+            <h1 class="contact-heading">For Issues & Queries</h1>
+            <a href="mailto:events@ecelliitk.com">events@ecelliitk.com</a>
+            <a href="mailto:ecell@iitk.ac.in">ecell@iitk.ac.in</a>
+        </div>
+
+        <div class="sponsorship">
+            <h1 class="contact-heading">For sponsorship opportunities</h1>
+            <a href="mailto:marketing.ecelliitk@gmail.com">marketing.ecelliitk@gmail.com</a>
+        </div>
+    </div>
+
 
     <script src="carousel.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"

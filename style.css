@@ -448,7 +448,7 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 2vw;
-  background: black;
+  background: rgb(240, 239, 239);
 
   min-height: 100vh;
   font-family: "Poppins", sans-serif;
@@ -480,7 +480,7 @@ body {
 }
 
 .vision_info>div>h1 {
-  color: white;
+  color: rgb(0, 0, 0);
   font-size: 2.8rem;
   border-bottom: 4px solid yellow;
   margin-bottom: 1rem;
@@ -488,7 +488,7 @@ body {
 
 .vision_info>div>p {
   font-size: 1rem;
-  color: white;
+  color: rgb(0, 0, 0);
   line-height: 1.8;
 }
 

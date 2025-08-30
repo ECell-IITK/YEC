@@ -266,7 +266,7 @@ body {
 .about-section {
   position: relative;
   background-color: white;
-  min-height: 100vh;
+  min-height: auto;
   padding: 2vw;
   overflow: hidden;
   font-family: "Poppins", sans-serif;
@@ -313,10 +313,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 2rem;
+  gap: 8rem;
   position: relative;
   z-index: 5;
-  padding: 0vw 6vw;
+  padding: 1vw 2vw;
   padding-top: 5rem;
 }
 
@@ -342,7 +342,7 @@ body {
 
 /* ========== RIGHT ROCKET IMAGE ========== */
 .about-rocket {
-  flex: 0.7;
+  flex: 0.5;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -364,9 +364,9 @@ body {
   .about-container{
     flex-direction: column;
   }
-  .about-rocket img{
+  /* .about-rocket img{
     display: none;
-  }
+  } */
   .About {
     padding: 6vh 5vw;
     height: 60vh;
@@ -450,7 +450,7 @@ body {
   padding: 2vw;
   background: rgb(240, 239, 239);
 
-  min-height: 100vh;
+  min-height: auto;
   font-family: "Poppins", sans-serif;
   overflow: hidden;
   gap: 2rem;
@@ -466,7 +466,6 @@ body {
 .vision-image img {
   max-width: 100%;
   width: 450px;
-  /* Fixed for large screens */
   height: auto;
   transition: all 0.3s ease-in-out;
 }
@@ -496,6 +495,9 @@ body {
   .vision-image img {
     width: 350px;
   }
+  .about-rocket{
+    width: 350px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -511,6 +513,13 @@ body {
   }
 
   .vision-image img {
+    width: 70%;
+  }
+  .about-rocket {
+    margin-bottom: 2rem;
+  }
+
+  .about-rocket img {
     width: 70%;
   }
 
@@ -530,6 +539,10 @@ body {
 
 @media screen and (max-width: 480px) {
   .vision-image {
+    display: none;
+    /* Hide image on mobile */
+  }
+  .about-rocket {
     display: none;
     /* Hide image on mobile */
   }
@@ -668,6 +681,10 @@ body {
 
 
 @media screen and (max-width: 630px) {
+  .incentives-container{
+    flex-direction: column;
+    align-items: center;
+  }
   .incentives-boxes {
     padding: 0 10px;
   }
@@ -982,7 +999,7 @@ Terms and condition
   }
 
   .judging {
-    min-height: 60vh;
+    min-height: auto;
   }
 
   .judging-box {

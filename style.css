@@ -364,9 +364,6 @@ body {
   .about-container{
     flex-direction: column;
   }
-  /* .about-rocket img{
-    display: none;
-  } */
   .About {
     padding: 6vh 5vw;
     height: 60vh;

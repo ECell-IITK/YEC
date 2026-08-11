@@ -466,17 +466,12 @@
         hamMenuIcon.addEventListener("click", () => {
             navBar.classList.toggle("active");
             hamMenuIcon.classList.toggle("fa-times");
-            logoText.style.color = "white"
-            header.style.backgroundColor = "black"
-            targetEls.forEach((ele) => {
-                if (ele.querySelector('a'))
-                    ele.querySelector('a').style.color = "yellow";
-            })
         });
-        navLinks.forEach((navLinks) => {
-            navLinks.addEventListener("click", () => {
+
+        navLinks.forEach((link) => {
+            link.addEventListener("click", () => {
                 navBar.classList.remove("active");
-                hamMenuIcon.classList.toggle("fa-times");
+                hamMenuIcon.classList.remove("fa-times");
             });
         });
     </script>

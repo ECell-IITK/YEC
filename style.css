@@ -1977,42 +1977,90 @@ a {
 
 @media screen and (max-width: 991px) {
   .hero-section {
-    min-height: 100vh;
-    padding: 90px 4% 30px 5%;
-    align-items: flex-start;
+    min-height: auto;
+    padding: 165px 4% 40px 4%;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: flex-start;
   }
   .hero-left {
     max-width: 100%;
-    margin-top: 20px;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
   }
   .hero-title-line {
-    font-size: clamp(1.8rem, 6.4vw, 4.2rem);
+    font-size: clamp(2.2rem, 8vw, 3.8rem);
+    text-align: center;
   }
   .hero-long-word {
-    font-size: clamp(1.6rem, 5.5vw, 4.2rem) !important;
+    font-size: clamp(1.65rem, 6.8vw, 3.4rem) !important;
+    text-align: center;
+  }
+  .hero-btn-wrapper {
+    margin-top: 28px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
   }
   .hero-register-btn {
-    font-size: 1.3rem;
-    padding: 14px 30px;
-    border-width: 3px;
+    font-size: 1.25rem;
+    padding: 14px 32px;
+    border-width: 3.5px;
     box-shadow: 5px 5px 0px #000000;
   }
+  .hero-right {
+    position: relative;
+    right: auto;
+    bottom: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+  }
   .hero-rocket-img {
-    max-width: clamp(220px, 48vw, 420px);
-    max-height: 55vh;
+    max-width: clamp(220px, 65vw, 360px);
+    max-height: 40vh;
+    margin: 0 auto;
   }
 }
 
 @media screen and (max-width: 576px) {
+  .hero-section {
+    padding: 155px 16px 30px 16px;
+  }
   .hero-title-line {
-    font-size: clamp(1.4rem, 6.2vw, 2.8rem);
+    font-size: clamp(1.8rem, 8.5vw, 2.6rem);
   }
   .hero-long-word {
-    font-size: clamp(1.3rem, 5.5vw, 2.8rem) !important;
+    font-size: clamp(1.35rem, 6.4vw, 2.2rem) !important;
+  }
+  .hero-title-line::after {
+    left: 3px;
+    top: 3px;
+    -webkit-text-stroke: 1.8px #000000;
+  }
+  .hero-long-word::after {
+    left: 3px;
+    top: 3px;
+    -webkit-text-stroke: 1.8px #000000;
+  }
+  .hero-btn-wrapper {
+    margin-top: 22px;
+  }
+  .hero-register-btn {
+    font-size: 1.1rem;
+    padding: 12px 26px;
+    border-width: 3px;
+    box-shadow: 4px 4px 0px #000000;
   }
   .hero-rocket-img {
-    max-width: clamp(180px, 55vw, 300px);
-    max-height: 45vh;
+    max-width: clamp(180px, 70vw, 280px);
+    max-height: 35vh;
   }
 }
 
@@ -2416,8 +2464,16 @@ a {
 }
 
 @media screen and (max-width: 600px) {
+  .expect-card-body {
+    padding: 24px 16px;
+  }
   .expect-grid-3col {
     grid-template-columns: 1fr;
+    gap: 14px;
+  }
+  .expect-item {
+    padding: 12px 16px;
+    font-size: 0.88rem;
   }
 }
 
@@ -2722,6 +2778,19 @@ a {
 }
 
 /* Responsive Grid Adjustments */
+@media screen and (max-width: 600px) {
+  .contact-full-card {
+    padding: 24px 18px !important;
+  }
+  .contact-organizers-row {
+    gap: 36px;
+  }
+  .organizer-avatar-wrap {
+    width: 130px;
+    height: 130px;
+  }
+}
+
 @media screen and (max-width: 1100px) {
   .pop-grid-container {
     grid-template-columns: 1fr;

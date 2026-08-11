@@ -115,6 +115,11 @@ nav ul li:last-child a:hover {
 }
 
 @media only screen and (max-width: 767px) {
+  header {
+    top: 15px;
+    padding: 6px 20px;
+  }
+
   #ham-menu {
     display: block;
   }

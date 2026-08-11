@@ -2332,6 +2332,7 @@ a {
 }
 
 .side-pop-card {
+  background-color: #ffffff;
   width: 100%;
   min-height: auto !important;
   border-radius: 24px;

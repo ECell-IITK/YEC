@@ -1,27 +1,25 @@
-window.onscroll = function() {scrollFunction()}
-function scrollFunction(){
-    var scrollTop = window.pageYOffset || (document.documentElement || document.body.parentNode || document.body).scrollTop
-    // console.log(scrollTop);
-    var navElement = document.querySelector("header")
-    var targetEls = document.querySelector("#nav-bar").querySelectorAll('li')
-    // console.log(targetEls);
-    var logoText = document.querySelector('.logo-text')
-    // console.log(logoText)
-    var width = window.innerWidth;
-    if(scrollTop < 200 && width > 800){
-        navElement.style.backgroundColor = "transparent"
-        logoText.style.color = "black"
-        targetEls.forEach((ele)=>{
-            if(ele.querySelector('a'))
-            ele.querySelector('a').style.color = "black";
-        })
-    }else{
-        navElement.style.backgroundColor = "black"
-        logoText.style.color = "white"
-        targetEls.forEach((ele)=>{
-            if(ele.querySelector('a'))
-            ele.querySelector('a').style.color = "yellow";
-        })
+let lastScrollTop = 0;
+
+window.addEventListener('scroll', function() {
+    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    let header = document.querySelector("header");
+
+    if (!header) return;
+
+    // Only trigger hide after scrolling down past 100px
+    if (scrollTop > lastScrollTop && scrollTop > 100) {
+        // Scrolling DOWN -> Hide floating navbar
+        header.classList.add("nav-hidden");
+    } else {
+        // Scrolling UP -> Reveal floating navbar
+        header.classList.remove("nav-hidden");
     }
 
-}
+    if (scrollTop > 50) {
+        header.style.boxShadow = "8px 8px 0px #000000";
+    } else {
+        header.style.boxShadow = "6px 6px 0px #000000";
+    }
+
+    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For mobile or negative scroll bounds
+});

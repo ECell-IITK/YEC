@@ -2783,7 +2783,7 @@ a {
     padding: 24px 18px !important;
   }
   .contact-organizers-row {
-    gap: 36px;
+    gap: 50px;
   }
   .organizer-avatar-wrap {
     width: 130px;
@@ -2802,7 +2802,7 @@ a {
     transform: none;
   }
   .contact-organizers-row {
-    gap: 40px;
+    gap: 60px;
   }
 }
 

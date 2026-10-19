@@ -772,8 +772,36 @@ body {
 }
 
 /* ==========================================================================
-   Section 5: School Partners
+   Section 5: Partners & Outreach
    ========================================================================== */
+.partner-category-block {
+  width: 100%;
+}
+
+.partner-category-title {
+  font-family: 'Plus Jakarta Sans', 'Inter', sans-serif;
+  font-size: 1.05rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+  text-align: center;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.partner-category-title::before,
+.partner-category-title::after {
+  content: "";
+  display: block;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.08);
+  width: 60px;
+}
+
 .partners-clean-grid {
   display: flex;
   flex-wrap: wrap;
@@ -1364,6 +1392,15 @@ body {
   .organizer-avatar-wrap {
     width: 135px;
     height: 135px;
+  }
+  .partner-category-title {
+    font-size: 0.92rem;
+    gap: 10px;
+    margin-bottom: 14px;
+  }
+  .partner-category-title::before,
+  .partner-category-title::after {
+    width: 30px;
   }
   .partners-clean-grid {
     gap: 12px;

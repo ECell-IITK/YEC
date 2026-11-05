@@ -839,6 +839,78 @@ body {
 }
 
 /* ==========================================================================
+   Section: Results
+   ========================================================================== */
+.results-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(245, 158, 11, 0.12);
+  color: #D97706;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 700;
+  padding: 6px 16px;
+  border-radius: 9999px;
+  border: 1px solid rgba(245, 158, 11, 0.28);
+  margin-bottom: 12px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.results-badge i {
+  color: #F59E0B;
+}
+
+.results-actions-bar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 24px;
+  margin-bottom: 16px;
+}
+
+.btn-open-sheet {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #0F172A;
+  color: #FFFFFF !important;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.88rem;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: var(--transition);
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.12);
+}
+
+.btn-open-sheet:hover {
+  background: #1E293B;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.22);
+  color: #FFD400 !important;
+}
+
+.sheet-embed-container {
+  width: 100%;
+  height: 620px;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid rgba(15, 23, 42, 0.12);
+  background: #FFFFFF;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+}
+
+.sheet-embed-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}
+
+/* ==========================================================================
    Section 6: Meet The Team
    ========================================================================== */
 .organizers-clean-grid {
@@ -1468,5 +1540,19 @@ body {
   
   .banner-brand-text {
     font-size: 0.72rem;
+  }
+  
+  .sheet-embed-container {
+    height: 480px;
+    border-radius: 12px;
+  }
+
+  .results-actions-bar {
+    justify-content: stretch;
+  }
+
+  .btn-open-sheet {
+    width: 100%;
+    justify-content: center;
   }
 }
